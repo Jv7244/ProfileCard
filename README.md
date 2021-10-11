@@ -1,1 +1,1 @@
-Profile card totalmente responsivo feito para de teste de designer e grid no Css
+Profile card totalmente responsivo feito para teste de designer e grid no Css
