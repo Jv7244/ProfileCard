@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+  --border: 1px solid pink;;
+}
+body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: pink;
+  font-family: "Kumbh Sans";
+  background-color: black;
+}
+.conteiner{
+  background-image: url('imagens/back.jpg') ;
+  display: grid;
+  
+  margin: 100px 32%;
+  overflow: hidden;
+  grid-template-columns: 33.3% 33.3% 33.4%;
+  grid-template-rows: 65% 20% 50%;
+  grid-template-areas: "profile-top profile-top profile-top" "um dois tres" "fooder fooder fooder";
+  border-radius: 10px;
+  padding-bottom: 80px;
+  border-top:  var(--border);
+  border-bottom:  var(--border);
+}
+.profile-top{
+  grid-area: profile-top;
+  padding-top: 50px;
+  padding-left: 5%; 
+  padding-right: 5%;
+  padding-bottom: -300%;
+  border-top: var(--border);
+  border-right: var(--border);
+  border-left: var(--border);
+}
+.profile-top img{
+  border-radius: 50% 50%;
+  border: 5px solid pink;;
+}
+img{
+  margin-left: auto;
+  margin-right: auto;
+}
+.Ss{  /*sombra*/
+  color:white;
+  text-shadow: 0.1em 0.1em 0.2em #daa520;
+}
+.um{
+  padding-top: 5px; 
+    padding-bottom: 0;
+  grid-area: um;
+  background: black;
+  border-right: var(--border);
+  border-bottom: var(--border);
+  border-bottom-right-radius: 50px;
+  border-top: var(--border);
+}
+.dois{
+  padding-top: 5px;
+  padding-bottom: 0;
+  grid-area: dois;
+  /*background-color: rgb(15,15,15);*/
+}.tres{
+  padding-top: 5px;
+  padding-bottom: 0;
+  grid-area: tres;
+  background: black;
+  border-top: var(--border);
+  border-left: var(--border);
+  border-bottom: var(--border);
+  border-bottom-left-radius: 50px;
+}
+.fooder{
+  grid-area: fooder;
+/*background-color: rgb(15,15,15);*/
+  padding-top: 20px;
+  padding-left: 30%;
+  text-align: left;
+  border-right: var(--border);
+  border-left: var(--border);
+}
+
+.grow:hover{
+  transform: scale(1.8);
+}
+
+/*responsiveness*/
+@media screen and (max-width: 950px){.fooder{padding-left:15%;}}
+@media screen and (max-width: 800px){
+  .conteiner{
+    margin: 50px 15%;
+  }
+  .fooder{
+    padding-left: 15%;
+  }
+}
+@media screen and (max-width: 400px){
+  .conteiner{
+    margin: 30px 10%
+  } 
+  .fooder{
+    padding-left: 5%;
+  } 
+}
